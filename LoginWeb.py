@@ -70,6 +70,6 @@ def extraer_reservas(driver: webdriver):
             }
             lista_reservas.append(reserva)
         print("conseguidas las reservas")
-        for i in lista_reservas:
-            print(i)
+    for i in lista_reservas:
+        print(i)
     return (lista_reservas)
