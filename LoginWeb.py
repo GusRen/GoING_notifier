@@ -27,7 +27,7 @@ def login(user: str, password: str):
     campo_clave.send_keys(password)
     campo_clave.send_keys(Keys.RETURN)
     time.sleep(2)
-
+    print("Logged in!")
     return driver
 
 
@@ -78,4 +78,5 @@ def extraer_reservas(driver: webdriver, semanas_a_revisar: int = 2):
             except Exception:
                 print("No hay más semanas disponibles o falló el botón siguiente.")
                 break  # Rompe el ciclo for y termina de buscar
+    print("creada la lista con todas las reservas!")
     return (lista_reservas)
